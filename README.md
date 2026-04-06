@@ -174,3 +174,17 @@ Thank you to all our backers! 🙏
 Support this project by becoming a sponsor. Your logo will show up here with a link to your website.
 
 <a href="https://opencollective.com/bagisto" target="_blank"><img src="https://opencollective.com/bagisto/sponsors.svg?width=890&isActive=true"></a>
+
+
+
+
+
+# Docker Installation on local machine
+
+docker compose up -d
+
+## Useful next commands: once you have the container running:
+
+Stop services: docker compose stop
+Stop and remove container/network: docker compose down
+View live logs: docker compose logs -f bagisto
