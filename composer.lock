@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f4f76bb98510e8bd297f1a0d8ff91b5d",
+    "content-hash": "3f5295cbd00880e0976f122dd1ab999f",
     "packages": [
+        {
+            "name": "andreiio/blade-remix-icon",
+            "version": "3.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andreiio/blade-remix-icon.git",
+                "reference": "622f77d25bae5d9de6aed31e70dfea92bb0cbe8f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andreiio/blade-remix-icon/zipball/622f77d25bae5d9de6aed31e70dfea92bb0cbe8f",
+                "reference": "622f77d25bae5d9de6aed31e70dfea92bb0cbe8f",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.0",
+                "php": "^7.4|^8.0|^8.1"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^6.0|^7.0|^8.0",
+                "phpunit/phpunit": "^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "AndreiIonita\\BladeRemixIcon\\BladeRemixIconServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AndreiIonita\\BladeRemixIcon\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrei Ioniță",
+                    "homepage": "https://andrei.io"
+                }
+            ],
+            "description": "A package to easily make use of Remix Icon in your Laravel Blade views.",
+            "support": {
+                "issues": "https://github.com/andreiio/blade-remix-icon/issues",
+                "source": "https://github.com/andreiio/blade-remix-icon/tree/3.9.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/code4romania",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-01-29T12:19:49+00:00"
+        },
         {
             "name": "apimatic/core",
             "version": "0.3.17",
@@ -363,6 +421,181 @@
             "time": "2022-12-07T17:46:57+00:00"
         },
         {
+            "name": "bagistoplus/visual",
+            "version": "v2.0.0-alpha.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagistoplus/visual.git",
+                "reference": "39c1a23176fee9c6eb8a7f7c3e63845ba0a2a594"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagistoplus/visual/zipball/39c1a23176fee9c6eb8a7f7c3e63845ba0a2a594",
+                "reference": "39c1a23176fee9c6eb8a7f7c3e63845ba0a2a594",
+                "shasum": ""
+            },
+            "require": {
+                "andreiio/blade-remix-icon": "^3.6",
+                "blade-ui-kit/blade-heroicons": "^2.4",
+                "blade-ui-kit/blade-icons": "^1.7",
+                "craftile/laravel": "^0.5",
+                "illuminate/contracts": "^11.0||^12.0",
+                "mallardduck/blade-lucide-icons": "^1.23",
+                "matthieumastadenis/couleur": "^0.1.2",
+                "mews/purifier": "^3.4",
+                "php": "^8.2",
+                "spatie/browsershot": "^3.61||^5.0",
+                "spatie/once": "^3.1",
+                "symfony/filesystem": "^6.4"
+            },
+            "require-dev": {
+                "archielite/laravel-facade-docblock-generator": "^1.0",
+                "bagisto/bagisto": "^2.3",
+                "calebdw/larastan-livewire": "^1.1",
+                "larastan/larastan": "^2.9",
+                "laravel/pint": "^1.14",
+                "livewire/livewire": "^3.6",
+                "mockery/mockery": "^1.6",
+                "nunomaduro/collision": "^8.1.1||^7.10.0",
+                "orchestra/testbench": "^9.0.0||^8.22.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-arch": "^2.7",
+                "pestphp/pest-plugin-laravel": "^2.3",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Visual": "BagistoPlus\\Visual\\Facades\\Visual",
+                        "ThemeEditor": "BagistoPlus\\Visual\\Facades\\ThemeEditor"
+                    },
+                    "providers": [
+                        "BagistoPlus\\Visual\\Providers\\VisualServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BagistoPlus\\Visual\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eldo Magan",
+                    "email": "magan.eldo@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bagisto theme framework and visual theme editor",
+            "homepage": "https://github.com/bagistoplus/visual",
+            "keywords": [
+                "BagistoPlus",
+                "bagisto",
+                "bagisto extension",
+                "bagisto theme",
+                "bagisto theme editor",
+                "bagisto visual",
+                "bagisto visual theme editor",
+                "e-commerce",
+                "laravel",
+                "visual"
+            ],
+            "support": {
+                "issues": "https://github.com/bagistoplus/visual/issues",
+                "source": "https://github.com/bagistoplus/visual/tree/v2.0.0-alpha.4"
+            },
+            "time": "2026-01-15T06:36:00+00:00"
+        },
+        {
+            "name": "bagistoplus/visual-debut",
+            "version": "v2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bagistoplus/visual-debut.git",
+                "reference": "f187a4d669c1ad2e877b56cb6047ac5c148d347c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bagistoplus/visual-debut/zipball/f187a4d669c1ad2e877b56cb6047ac5c148d347c",
+                "reference": "f187a4d669c1ad2e877b56cb6047ac5c148d347c",
+                "shasum": ""
+            },
+            "require": {
+                "bagistoplus/visual": "^2.0@dev",
+                "illuminate/contracts": "^10.0||^11.0||^12.0",
+                "livewire/livewire": "3.7.4",
+                "matthieumastadenis/couleur": "^0.1.2",
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "bagisto/bagisto": "^2.2",
+                "larastan/larastan": "^2.9",
+                "laravel/pint": "^1.14",
+                "nunomaduro/collision": "^8.1.1||^7.10.0",
+                "orchestra/testbench": "^9.0.0||^8.22.0",
+                "pestphp/pest": "^2.34",
+                "pestphp/pest-plugin-arch": "^2.7",
+                "pestphp/pest-plugin-laravel": "^2.3",
+                "phpstan/extension-installer": "^1.3",
+                "phpstan/phpstan-deprecation-rules": "^1.1",
+                "phpstan/phpstan-phpunit": "^1.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BagistoPlus\\VisualDebut\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BagistoPlus\\VisualDebut\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eldo Magan",
+                    "email": "magan.eldo@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Bagisto Visual Theme: VisualDebut",
+            "homepage": "https://github.com/bagistoplus/visual-debut",
+            "keywords": [
+                "bagisto",
+                "bagisto theme",
+                "bagisto visual",
+                "bagisto visual theme",
+                "extension",
+                "theme",
+                "visual",
+                "visual debut"
+            ],
+            "support": {
+                "issues": "https://github.com/bagistoplus/visual-debut/issues",
+                "source": "https://github.com/bagistoplus/visual-debut/tree/v2"
+            },
+            "time": "2026-02-22T11:16:34+00:00"
+        },
+        {
             "name": "barryvdh/laravel-dompdf",
             "version": "v3.1.2",
             "source": {
@@ -438,6 +671,156 @@
                 }
             ],
             "time": "2026-02-21T08:51:10+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-heroicons",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/driesvints/blade-heroicons.git",
+                "reference": "66fa8ba09dba12e0cdb410b8cb94f3b890eca440"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/driesvints/blade-heroicons/zipball/66fa8ba09dba12e0cdb410b8cb94f3b890eca440",
+                "reference": "66fa8ba09dba12e0cdb410b8cb94f3b890eca440",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.6",
+                "illuminate/support": "^9.0|^10.0|^11.0|^12.0|^13.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0|^11.0",
+                "phpunit/phpunit": "^9.0|^10.5|^11.0|^12.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Heroicons\\BladeHeroiconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "BladeUI\\Heroicons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of Heroicons in your Laravel Blade views.",
+            "homepage": "https://github.com/driesvints/blade-heroicons",
+            "keywords": [
+                "Heroicons",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/driesvints/blade-heroicons/issues",
+                "source": "https://github.com/driesvints/blade-heroicons/tree/2.7.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/driesvints",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.paypal.com/paypalme/driesvints",
+                    "type": "paypal"
+                }
+            ],
+            "time": "2026-03-16T13:00:23+00:00"
+        },
+        {
+            "name": "blade-ui-kit/blade-icons",
+            "version": "1.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/driesvints/blade-icons.git",
+                "reference": "caa92fde675d7a651c38bf73ca582ddada56f318"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/driesvints/blade-icons/zipball/caa92fde675d7a651c38bf73ca582ddada56f318",
+                "reference": "caa92fde675d7a651c38bf73ca582ddada56f318",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/filesystem": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "illuminate/view": "^8.0|^9.0|^10.0|^11.0|^12.0|^13.0",
+                "php": "^7.4|^8.0",
+                "symfony/console": "^5.3|^6.0|^7.0|^8.0",
+                "symfony/finder": "^5.3|^6.0|^7.0|^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.5.1",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "phpunit/phpunit": "^9.0|^10.5|^11.0"
+            },
+            "bin": [
+                "bin/blade-icons-generate"
+            ],
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "BladeUI\\Icons\\BladeIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "BladeUI\\Icons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dries Vints",
+                    "homepage": "https://driesvints.com"
+                }
+            ],
+            "description": "A package to easily make use of icons in your Laravel Blade views.",
+            "homepage": "https://github.com/driesvints/blade-icons",
+            "keywords": [
+                "blade",
+                "icons",
+                "laravel",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/driesvints/blade-icons/issues",
+                "source": "https://github.com/driesvints/blade-icons"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/driesvints",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.paypal.com/paypalme/driesvints",
+                    "type": "paypal"
+                }
+            ],
+            "time": "2026-02-23T10:42:23+00:00"
         },
         {
             "name": "brick/math",
@@ -723,6 +1106,118 @@
                 }
             ],
             "time": "2025-08-20T19:15:30+00:00"
+        },
+        {
+            "name": "craftile/core",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftile/core-php.git",
+                "reference": "2736aa96f75da6bf6a1d725225cfae773877f22c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftile/core-php/zipball/2736aa96f75da6bf6a1d725225cfae773877f22c",
+                "reference": "2736aa96f75da6bf6a1d725225cfae773877f22c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.14",
+                "pestphp/pest": "^2.0",
+                "phpstan/phpstan": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Craftile\\Core\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eldo Magan",
+                    "email": "magan.eldo@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Craftile Core Package",
+            "support": {
+                "issues": "https://github.com/craftile/core-php/issues",
+                "source": "https://github.com/craftile/core-php/tree/v0.5.1"
+            },
+            "time": "2026-01-15T05:52:22+00:00"
+        },
+        {
+            "name": "craftile/laravel",
+            "version": "v0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/craftile/laravel.git",
+                "reference": "ce76f07c903ff4a470755f854aa173e721181b90"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/craftile/laravel/zipball/ce76f07c903ff4a470755f854aa173e721181b90",
+                "reference": "ce76f07c903ff4a470755f854aa173e721181b90",
+                "shasum": ""
+            },
+            "require": {
+                "craftile/core": "self.version",
+                "illuminate/support": "^11.0|^12.0",
+                "php": "^8.2",
+                "stillat/blade-parser": "^2.0",
+                "symfony/yaml": "^7.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.14",
+                "orchestra/testbench": "^9.0.0||^10.0.0",
+                "pestphp/pest": "^2.0",
+                "pestphp/pest-plugin-laravel": "^2.0",
+                "phpstan/phpstan": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Craftile": "Craftile\\Laravel\\Facades\\Craftile",
+                        "BlockDatastore": "Craftile\\Laravel\\Facades\\BlockDatastore"
+                    },
+                    "providers": [
+                        "Craftile\\Laravel\\CraftileServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Craftile\\Laravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Eldo Magan",
+                    "email": "magan.eldo@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Craftile Laravel Package",
+            "support": {
+                "issues": "https://github.com/craftile/laravel/issues",
+                "source": "https://github.com/craftile/laravel/tree/v0.5.1"
+            },
+            "time": "2026-01-15T05:15:51+00:00"
         },
         {
             "name": "dasprid/enum",
@@ -4282,6 +4777,82 @@
             "time": "2026-03-08T20:05:35+00:00"
         },
         {
+            "name": "livewire/livewire",
+            "version": "v3.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/livewire/livewire.git",
+                "reference": "5a8dffd4c0ab357ff7ed5b39e7c2453d962a68e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/livewire/livewire/zipball/5a8dffd4c0ab357ff7ed5b39e7c2453d962a68e0",
+                "reference": "5a8dffd4c0ab357ff7ed5b39e7c2453d962a68e0",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "^10.0|^11.0|^12.0",
+                "illuminate/routing": "^10.0|^11.0|^12.0",
+                "illuminate/support": "^10.0|^11.0|^12.0",
+                "illuminate/validation": "^10.0|^11.0|^12.0",
+                "laravel/prompts": "^0.1.24|^0.2|^0.3",
+                "league/mime-type-detection": "^1.9",
+                "php": "^8.1",
+                "symfony/console": "^6.0|^7.0",
+                "symfony/http-kernel": "^6.2|^7.0"
+            },
+            "require-dev": {
+                "calebporzio/sushi": "^2.1",
+                "laravel/framework": "^10.15.0|^11.0|^12.0",
+                "mockery/mockery": "^1.3.1",
+                "orchestra/testbench": "^8.21.0|^9.0|^10.0",
+                "orchestra/testbench-dusk": "^8.24|^9.1|^10.0",
+                "phpunit/phpunit": "^10.4|^11.5",
+                "psy/psysh": "^0.11.22|^0.12"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Livewire": "Livewire\\Livewire"
+                    },
+                    "providers": [
+                        "Livewire\\LivewireServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Livewire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Porzio",
+                    "email": "calebporzio@gmail.com"
+                }
+            ],
+            "description": "A front-end framework for Laravel.",
+            "support": {
+                "issues": "https://github.com/livewire/livewire/issues",
+                "source": "https://github.com/livewire/livewire/tree/v3.7.4"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/livewire",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-01-13T09:37:21+00:00"
+        },
+        {
             "name": "maatwebsite/excel",
             "version": "3.1.68",
             "source": {
@@ -4439,6 +5010,66 @@
                 }
             ],
             "time": "2025-12-10T09:58:31+00:00"
+        },
+        {
+            "name": "mallardduck/blade-lucide-icons",
+            "version": "1.26.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mallardduck/blade-lucide-icons.git",
+                "reference": "b56aac8c1c6d5701eead858b473449550ee94b75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mallardduck/blade-lucide-icons/zipball/b56aac8c1c6d5701eead858b473449550ee94b75",
+                "reference": "b56aac8c1c6d5701eead858b473449550ee94b75",
+                "shasum": ""
+            },
+            "require": {
+                "blade-ui-kit/blade-icons": "^1.8",
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "ext-fileinfo": "*",
+                "orchestra/testbench": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "phpunit/phpunit": "^9.0|^10.0|^11.0",
+                "spatie/phpunit-snapshot-assertions": "^4.2.14|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MallardDuck\\LucideIcons\\BladeLucideIconsServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MallardDuck\\LucideIcons\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dan Pock"
+                }
+            ],
+            "description": "A package to easily make use of Lucide icons in your Laravel Blade views.",
+            "homepage": "https://github.com/mallardduck/blade-lucide-icons",
+            "keywords": [
+                "LucideIcons",
+                "blade",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/mallardduck/blade-lucide-icons/issues",
+                "source": "https://github.com/mallardduck/blade-lucide-icons/tree/1.26.11"
+            },
+            "time": "2026-03-26T00:26:22+00:00"
         },
         {
             "name": "markbaker/complex",
@@ -4613,6 +5244,165 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.10.0"
             },
             "time": "2025-07-25T09:04:22+00:00"
+        },
+        {
+            "name": "matthieumastadenis/couleur",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/matthieumastadenis/couleur.git",
+                "reference": "3842cf51c9517e77afaa0a36ec78643a0c258e0b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/matthieumastadenis/couleur/zipball/3842cf51c9517e77afaa0a36ec78643a0c258e0b",
+                "reference": "3842cf51c9517e77afaa0a36ec78643a0c258e0b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.1"
+            },
+            "require-dev": {
+                "php": "~8.1",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/utils/utils.php",
+                    "src/utils/css/conversions.php",
+                    "src/utils/css/utils.php",
+                    "src/utils/hexRgb/conversions.php",
+                    "src/utils/hexRgb/utils.php",
+                    "src/utils/hsl/conversions.php",
+                    "src/utils/hsl/utils.php",
+                    "src/utils/hsv/conversions.php",
+                    "src/utils/hsv/utils.php",
+                    "src/utils/hwb/conversions.php",
+                    "src/utils/hwb/utils.php",
+                    "src/utils/lab/conversions.php",
+                    "src/utils/lab/utils.php",
+                    "src/utils/lch/conversions.php",
+                    "src/utils/lch/utils.php",
+                    "src/utils/linP3/conversions.php",
+                    "src/utils/linP3/utils.php",
+                    "src/utils/linProPhoto/conversions.php",
+                    "src/utils/linProPhoto/utils.php",
+                    "src/utils/linRgb/conversions.php",
+                    "src/utils/linRgb/utils.php",
+                    "src/utils/okLab/conversions.php",
+                    "src/utils/okLab/utils.php",
+                    "src/utils/okLch/conversions.php",
+                    "src/utils/okLch/utils.php",
+                    "src/utils/p3/conversions.php",
+                    "src/utils/p3/utils.php",
+                    "src/utils/proPhoto/conversions.php",
+                    "src/utils/proPhoto/utils.php",
+                    "src/utils/rgb/conversions.php",
+                    "src/utils/rgb/utils.php",
+                    "src/utils/xyzD50/conversions.php",
+                    "src/utils/xyzD50/utils.php",
+                    "src/utils/xyzD65/conversions.php",
+                    "src/utils/xyzD65/utils.php"
+                ],
+                "psr-4": {
+                    "matthieumastadenis\\couleur\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Matthieu Masta Denis",
+                    "email": "matthieu.denis@abitus.net"
+                }
+            ],
+            "description": "A modern PHP 8.1+ color library, compatible with CSS Color Module Level 4",
+            "support": {
+                "issues": "https://github.com/matthieumastadenis/couleur/issues",
+                "source": "https://github.com/matthieumastadenis/couleur/tree/v0.1.2"
+            },
+            "time": "2023-02-18T15:36:55+00:00"
+        },
+        {
+            "name": "mews/purifier",
+            "version": "3.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mewebstudio/Purifier.git",
+                "reference": "acc71bc512dcf9b87144546d0e3055fc76d244ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mewebstudio/Purifier/zipball/acc71bc512dcf9b87144546d0e3055fc76d244ff",
+                "reference": "acc71bc512dcf9b87144546d0e3055fc76d244ff",
+                "shasum": ""
+            },
+            "require": {
+                "ezyang/htmlpurifier": "^4.16.0",
+                "illuminate/config": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/filesystem": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "illuminate/support": "^5.8|^6.0|^7.0|^8.0|^9.0|^10.0|^11.0|^12.0",
+                "php": "^7.2|^8.0"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^3.2|^5.5.1|^6.1",
+                "mockery/mockery": "^1.3.3",
+                "phpunit/phpunit": "^8.0|^9.0|^10.0"
+            },
+            "suggest": {
+                "laravel/framework": "To test the Laravel bindings",
+                "laravel/lumen-framework": "To test the Lumen bindings"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "Purifier": "Mews\\Purifier\\Facades\\Purifier"
+                    },
+                    "providers": [
+                        "Mews\\Purifier\\PurifierServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Mews\\Purifier\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Muharrem ERİN",
+                    "email": "me@mewebstudio.com",
+                    "homepage": "https://github.com/mewebstudio",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Laravel 5/6/7/8/9/10 HtmlPurifier Package",
+            "homepage": "https://github.com/mewebstudio/purifier",
+            "keywords": [
+                "Laravel Purifier",
+                "Laravel Security",
+                "Purifier",
+                "htmlpurifier",
+                "laravel HtmlPurifier",
+                "security",
+                "xss"
+            ],
+            "support": {
+                "issues": "https://github.com/mewebstudio/Purifier/issues",
+                "source": "https://github.com/mewebstudio/Purifier/tree/3.4.3"
+            },
+            "time": "2025-02-24T16:00:29+00:00"
         },
         {
             "name": "moneyphp/money",
@@ -8406,6 +9196,61 @@
             "time": "2025-05-21T16:53:09+00:00"
         },
         {
+            "name": "stillat/blade-parser",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Stillat/blade-parser.git",
+                "reference": "23a962f99bca451f8738ed2475a70129fb33f07c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Stillat/blade-parser/zipball/23a962f99bca451f8738ed2475a70129fb33f07c",
+                "reference": "23a962f99bca451f8738ed2475a70129fb33f07c",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "^10.0 || ^11.0 || ^12.0 || ^13.0",
+                "php": "^8.2.0"
+            },
+            "require-dev": {
+                "brianium/paratest": "*",
+                "laravel/pint": "^1.4",
+                "mockery/mockery": ">=1.3.3",
+                "orchestra/testbench": "^8.14 || ^9.2 || ^10.0 || ^11.0",
+                "pestphp/pest": "^3.7.3 || ^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Stillat\\BladeParser\\ServiceProvider",
+                        "Stillat\\BladeParser\\Providers\\ValidatorServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Stillat\\BladeParser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "support": {
+                "issues": "https://github.com/Stillat/blade-parser/issues",
+                "source": "https://github.com/Stillat/blade-parser/tree/v2.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/johnathonkoster",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-02-26T17:21:13+00:00"
+        },
+        {
             "name": "stripe/stripe-php",
             "version": "v17.6.0",
             "source": {
@@ -9090,6 +9935,76 @@
                 }
             ],
             "time": "2024-09-25T14:21:43+00:00"
+        },
+        {
+            "name": "symfony/filesystem",
+            "version": "v6.4.34",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/filesystem.git",
+                "reference": "01ffe0411b842f93c571e5c391f289c3fdd498c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/01ffe0411b842f93c571e5c391f289c3fdd498c3",
+                "reference": "01ffe0411b842f93c571e5c391f289c3fdd498c3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.8"
+            },
+            "require-dev": {
+                "symfony/process": "^5.4|^6.4|^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Filesystem\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides basic utilities for the filesystem",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/filesystem/tree/v6.4.34"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-02-24T17:51:06+00:00"
         },
         {
             "name": "symfony/finder",
@@ -11292,6 +12207,82 @@
                 }
             ],
             "time": "2026-02-15T10:53:20+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v7.4.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "58751048de17bae71c5aa0d13cb19d79bca26391"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/58751048de17bae71c5aa0d13cb19d79bca26391",
+                "reference": "58751048de17bae71c5aa0d13cb19d79bca26391",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3",
+                "symfony/polyfill-ctype": "^1.8"
+            },
+            "conflict": {
+                "symfony/console": "<6.4"
+            },
+            "require-dev": {
+                "symfony/console": "^6.4|^7.0|^8.0"
+            },
+            "bin": [
+                "Resources/bin/yaml-lint"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Loads and dumps YAML files",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/yaml/tree/v7.4.6"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2026-02-09T09:33:46+00:00"
         },
         {
             "name": "thecodingmachine/safe",
@@ -14990,82 +15981,6 @@
             "time": "2024-10-20T05:08:20+00:00"
         },
         {
-            "name": "symfony/yaml",
-            "version": "v7.4.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/yaml.git",
-                "reference": "58751048de17bae71c5aa0d13cb19d79bca26391"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/58751048de17bae71c5aa0d13cb19d79bca26391",
-                "reference": "58751048de17bae71c5aa0d13cb19d79bca26391",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3",
-                "symfony/polyfill-ctype": "^1.8"
-            },
-            "conflict": {
-                "symfony/console": "<6.4"
-            },
-            "require-dev": {
-                "symfony/console": "^6.4|^7.0|^8.0"
-            },
-            "bin": [
-                "Resources/bin/yaml-lint"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Yaml\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Loads and dumps YAML files",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.4.6"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/nicolas-grekas",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2026-02-09T09:33:46+00:00"
-        },
-        {
             "name": "ta-tikoma/phpunit-architecture-test",
             "version": "0.8.7",
             "source": {
@@ -15239,7 +16154,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "bagistoplus/visual": 20,
+        "bagistoplus/visual-debut": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
@@ -15253,6 +16171,6 @@
         "ext-pdo_mysql": "*",
         "ext-tokenizer": "*"
     },
-    "platform-dev": {},
-    "plugin-api-version": "2.9.0"
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
 }
