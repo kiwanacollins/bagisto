@@ -2,7 +2,7 @@ services:
   bagisto:
     image: webkul/bagisto:latest
     ports:
-      - "80:80"
+      - "81:80"
     environment:
       APP_URL: "http://207.180.249.87"
       APP_ENV: production
