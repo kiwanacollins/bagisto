@@ -178,6 +178,10 @@ Support this project by becoming a sponsor. Your logo will show up here with a l
 
 
 
+# dashboard Auth
+admin@example.com
+admin123
+
 
 # Docker Installation on local machine
 
@@ -188,3 +192,8 @@ docker compose up -d
 Stop services: docker compose stop
 Stop and remove container/network: docker compose down
 View live logs: docker compose logs -f bagisto
+
+docker compose down && docker compose up -d --force-recreate
+
+
+

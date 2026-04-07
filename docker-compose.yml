@@ -8,6 +8,7 @@ services:
       APP_ENV: production
       APP_DEBUG: "false"
     volumes:
+      - ./:/var/www/bagisto
       - bagisto-mysql:/var/lib/mysql
       - bagisto-storage:/var/www/bagisto/storage
 
