@@ -4,13 +4,14 @@ services:
     ports:
       - "81:80"
     environment:
-      APP_URL: "https://shop.kicowebdesign.com"
+      APP_URL: "http://localhost:81"
       APP_ENV: production
       APP_DEBUG: "false"
     volumes:
       - ./:/var/www/bagisto
       - bagisto-mysql:/var/lib/mysql
       - bagisto-storage:/var/www/bagisto/storage
+      - ./docker/php/opcache-dev.ini:/etc/php/8.3/fpm/conf.d/99-opcache-dev.ini:ro
 
 volumes:
   bagisto-mysql:

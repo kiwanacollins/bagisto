@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Middleware\EncryptCookies;
+use App\Http\Middleware\PreserveSessionInDesignMode;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncryptCookies;
 use Illuminate\Foundation\Application;
@@ -35,6 +36,7 @@ return Application::configure(basePath: dirname(__DIR__))
 
         $middleware->append(SecureHeaders::class);
         $middleware->append(CanInstall::class);
+        $middleware->append(PreserveSessionInDesignMode::class);
 
         /**
          * Add the overridden middleware at the end of the list.
